@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Github Users</string>
+    <string name="favorite_symbol">Your Favorite Users</string>
+    <string name="profile">Profile</string>
+    <string name="setting">Announcement</string>
+    <string name="setting_2">Setting</string>
+    <string name="tab1">Following</string>
+    <string name="tab2">Followers</string>
+</resources>

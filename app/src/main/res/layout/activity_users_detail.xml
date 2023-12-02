@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.UsersDetailActivity"
+    tools:layout_editor_absoluteX="-17dp"
+    tools:layout_editor_absoluteY="102dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#C0A3C7"
+        android:elevation="4dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/option_menu"
+        app:title="@string/profile"
+        app:titleTextAppearance="@style/ToolbarTitleStyle" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageview_detail"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/Circle" />
+
+    <TextView
+        android:id="@+id/usernamedetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/cinnamoncoffecake"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/namedetail"
+        app:layout_constraintStart_toStartOf="@+id/namedetail"
+        app:layout_constraintTop_toBottomOf="@+id/namedetail"
+        tools:text="Username" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/usernamedetail"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/usernamedetail"
+        app:layout_constraintTop_toBottomOf="@+id/usernamedetail">
+
+        <TextView
+            android:id="@+id/followersdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/cinnamoncoffecake"
+            android:gravity="center_vertical"
+            android:textColor="#C0A3C7"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:text="Followers" />
+
+        <TextView
+            android:id="@+id/followingdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cinnamoncoffecake"
+            android:textAlignment="center"
+            android:textColor="#C0A3C7"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:text="Following" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/namedetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cinnamoncoffecake"
+        android:textAlignment="center"
+        android:textColor="#C0A3C7"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageview_detail"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/imageview_detail"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_detail"
+        tools:text="Name" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="#C0A3C7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpagerdetail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/favorite_sign"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="9dp"
+        android:background="@drawable/favs_sign"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
