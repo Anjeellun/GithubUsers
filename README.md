@@ -1,40 +1,38 @@
-# Android Beginner App - Dicoding Submission
+# Android Application Project - "Belajar Fundamental Aplikasi Android" Submission
 
-This Android application is a submission for the "Belajar Membuat Aplikasi Android untuk Pemula" course by Dicoding as part of the Bangkit Academy cohort program.
+## Overview
+
+This Android application is a submission for the "Belajar Fundamental Aplikasi Android" course by Dicoding as a part of the Bangkit Academy cohort. The app introduces two key features: Favorite User Management with Database integration and Theme Settings for a personalized user experience.
 
 ## Features
 
-### Home Page
+### Favorite User with Database
 
-- Display a list of at least 10 items with different images using RecyclerView.
-- Each item includes:
-  - Title of the article.
-  - Optional overview of the article.
-  - Clicking an item navigates to the Detail Page.
+- Users can add and remove other users to/from their favorites list.
+- The app includes a dedicated page displaying the list of favorite users.
+- Users can access the detail page for each favorite user.
 
-### Detail Page
+### Theme Settings
 
-- Display relevant information:
-  - Title and image corresponding to the selected item from the Home Page.
-  - Detailed description or additional information.
-- Use ScrollView to ensure content visibility during screen rotation.
-
-### About Page
-
-- Show a photo, name, and email registered with Dicoding.
-- Implement a button or view with the ID "about_page" to access the About Page.
+- A menu is provided to allow users to switch between light and dark themes.
+- The selected theme persists even after closing and reopening the application.
+- Theme changes are observed and implemented on the home page to ensure clarity for all components and indicators.
 
 ## Implementation Details
 
-- Utilize RecyclerView for the Home Page.
-- Implement click handlers for RecyclerView items to navigate to the Detail Page.
-- Use ScrollView for the Detail Page to support screen rotation.
-- Include a button or view with the ID "about_page" for easy access to the About Page.
+### Favorite User with Database
 
-## How to Access the About Page
+- Utilizes a database to store and manage favorite users.
+- Implements features to add and remove users from the favorites list.
+- Includes a separate page to display the list of favorite users.
+- Enables navigation to the detail page for each favorite user.
 
-To access the About Page, follow these steps:
+### Theme Settings
 
-1. Navigate to the Home Page.
-2. Look for a specific view or button with the ID "about_page."
-3. Click or tap on the identified element to open the About Page.
+- Incorporates a menu for theme selection (light or dark) using key-value storage.
+- Observes theme changes and dynamically implements them on the home page.
+- Ensures visibility and clarity for all components and indicators when the theme is switched.
+
+## Additional Notes
+
+- This project demonstrates proficiency in Android app development fundamentals and successfully meets the requirements set by Dicoding for the "Belajar Fundamental Aplikasi Android" course. Has received a 4-star rating from Dicoding.
